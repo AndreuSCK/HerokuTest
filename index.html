@@ -54,9 +54,26 @@
 
 <body>
     <ul id="messages"></ul>
+    <p id="server-time"></p>
     <form action="">
         <input id="m" autocomplete="off" /><button>Send</button>
     </form>
+
+
+
+    <!-- <script src="/socket.io/socket.io.js"></script>
+    <script>
+        var socket = io();
+        var el;
+
+        socket.on('time', function (timeString) {
+            el = document.getElementById('server-time')
+            el.innerHTML = 'Server time: ' + timeString;
+        });
+
+
+    </script> -->
+
 
 
 
