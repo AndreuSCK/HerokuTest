@@ -12,6 +12,7 @@ const io = socketIO(server);
 
 io.on('connection', (socket) => {
     console.log('Client connected');
+    io.emit('chat message', 'Client connected')
     socket.on('chat message', (msg) => {
         io.emit('chat message', msg);
         console.log('message: ' + msg);
