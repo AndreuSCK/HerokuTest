@@ -12,6 +12,13 @@
 
         body {
             font: 13px Helvetica, Arial;
+            background-color: #0a0a0a;
+        }
+
+        #chat {
+            width: 60%;
+            position: relative;
+            margin: 0 auto;
         }
 
         form {
@@ -19,7 +26,8 @@
             padding: 3px;
             position: fixed;
             bottom: 0;
-            width: 100%;
+            width: 60%;
+            margin: 0 auto;
         }
 
         form input {
@@ -53,11 +61,14 @@
 </head>
 
 <body>
-    <ul id="messages"></ul>
-    <p id="server-time"></p>
-    <form action="">
-        <input id="m" autocomplete="off" /><button>Send</button>
-    </form>
+    <div id="chat">
+        <ul id="messages"></ul>
+        <p id="server-time"></p>
+        <form action="">
+            <input id="m" autocomplete="off" /><button>Send</button>
+        </form>
+    </div>
+
 
 
 
